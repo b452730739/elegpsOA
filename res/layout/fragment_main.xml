@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/id_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:minHeight="?attr/actionBarSize">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="@string/app_name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_20" />
+                </android.support.v7.widget.Toolbar>
+m
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:background="@color/light_gray">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/space_10"
+                    android:paddingLeft="@dimen/space_10"
+                    android:background="@drawable/main_title_bg">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_head" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_15"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvUserName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="测试员1"
+                                android:textColor="@color/white" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_company"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+        </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_gray"
+                    android:paddingRight="@dimen/space_10"
+                    android:paddingLeft="@dimen/space_10">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/shipRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+
+                    android:visibility="gone"/>
+                </LinearLayout>
+        </LinearLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <LinearLayout
+            android:background="@color/light_gray"
+
+            android:paddingRight="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <RelativeLayout
+                android:id="@+id/moreLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/space_5"
+                    android:id="@+id/ll_more"
+                    android:background="@drawable/main_item_bg">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_send" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_last_release"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/the_latest_release"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:src="@drawable/icon_more" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/categoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_5"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_cargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cargo"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/space_5"
+                    android:paddingBottom="@dimen/space_5"
+                    android:theme="@style/BaseSize15TextView"
+                    android:layout_weight="1"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_ship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ship"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/space_5"
+                    android:paddingBottom="@dimen/space_5"
+                    android:theme="@style/BaseSize15TextView"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/waybillLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_marginBottom="@dimen/space_5"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/space_5"
+                    android:paddingBottom="@dimen/space_5"
+                    android:visibility="gone"
+                    android:theme="@style/BaseSize15TextView"
+                    android:layout_weight="1"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_to_receive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to_receive"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@drawable/icon_to_receive"
+                    android:paddingTop="@dimen/space_5"
+                    android:paddingBottom="@dimen/space_5"
+                    android:theme="@style/BaseSize15TextView"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_on_passage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/on_passage"
+                    android:drawableTop="@drawable/icon_on_way"
+
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/space_5"
+                    android:paddingBottom="@dimen/space_5"
+                    android:theme="@style/BaseSize15TextView"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_statement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_statement"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@drawable/icon_statement"
+
+                    android:paddingTop="@dimen/space_5"
+                    android:paddingBottom="@dimen/space_5"
+                    android:theme="@style/BaseSize15TextView"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include
+
+        layout="@layout/content_main_scrolling"></include>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/onLinePayRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/direct_pay_the_ship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/direct_pay_the_ship"
+            android:theme="@style/BaseTextView" />
+
+        <LinearLayout
+            android:id="@+id/direct_pay_the_ship_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/whether_in_advance_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/yes"
+                    android:theme="@style/BaseTextView" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/no"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:gravity="center"
+                    android:text="@string/whether_in_advance"
+                    android:theme="@style/BaseTextView" />
+            </RadioGroup>
+
+            <com.lcd.shipping.dh.module.send_cargo.view.OffLinePayLayout
+                android:id="@+id/offLinePayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20" />
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/prepay_the_agent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prepay_the_agent"
+            android:theme="@style/BaseTextView" />
+
+        <RadioGroup
+            android:id="@+id/prepaidRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_20"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/one_time_imprest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/one_time_imprest"
+                android:theme="@style/BaseTextView" />
+
+            <RadioButton
+                android:id="@+id/layaway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/layaway"
+                android:theme="@style/BaseTextView" />
+
+            <RadioGroup
+                android:id="@+id/pay_installment_Layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20"
+                android:visibility="gone">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/before_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/before_loading"
+                        android:theme="@style/BaseTextView" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_percentage11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:minWidth="@dimen/space_50"
+                        android:text="0"
+                        android:theme="@style/BaseTextView" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/the_percentage"
+                        android:theme="@style/BaseTextView" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/after_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/after_loading"
+                        android:theme="@style/BaseTextView" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_percentage22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:minWidth="@dimen/space_50"
+                        android:text="0"
+                        android:theme="@style/BaseTextView" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/the_percentage"
+                        android:theme="@style/BaseTextView" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/before_discharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/before_discharge"
+                        android:theme="@style/BaseTextView" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_percentage33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:minWidth="@dimen/space_50"
+                        android:text="0"
+                        android:theme="@style/BaseTextView" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/the_percentage"
+                        android:theme="@style/BaseTextView" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/after_discharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/after_discharge"
+                        android:theme="@style/BaseTextView" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_percentage44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:minWidth="@dimen/space_50"
+                        android:text="0"
+                        android:theme="@style/BaseTextView" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/the_percentage"
+                        android:theme="@style/BaseTextView" />
+                </LinearLayout>
+            </RadioGroup>
+        </RadioGroup>
+    </RadioGroup>
+
+</LinearLayout>

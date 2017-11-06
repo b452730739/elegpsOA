@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/entry_waybill"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_20" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="@dimen/space_1"
+        android:layout_height="@dimen/space_1"
+        /><requestFocus />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.lcd.shipping.dh.module.info_ship.ShipInfoLayout
+                android:id="@+id/shipInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/cargoNameLayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/cargo_name"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sp_cargo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cargoQuantityLayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/cargo_quantity"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_cargo_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:hint="点击输入货物数量"
+                    android:textColorHint="@color/color_hint"
+                    android:background="@null"
+                    android:inputType="number" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/tons"
+                    android:theme="@style/BaseTextView" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_select_ship"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_ship"
+                android:theme="@style/BaseButton" />
+
+
+            <com.lcd.shipping.dh.module.info_ship.ShipManageLayout
+                android:id="@+id/shipManageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:text="@string/submit"
+        android:theme="@style/BaseButton" />
+</LinearLayout>

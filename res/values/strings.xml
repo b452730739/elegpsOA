@@ -1,0 +1,317 @@
+<resources>
+    <string name="app_name">西江船运</string>
+    <string name="submit">提交</string>
+    <string name="search">查询</string>
+    <string name="select">选择</string>
+    <string name="clear">清除条件</string>
+    <string name="reserve">预订</string>
+    <string name="last_page_tips">已经是最后一页了</string>
+    <string name="cargo">货物</string>
+    <string name="ship">船舶</string>
+    <string name="tons">(吨)</string>
+    <string name="money_tons">(元/吨)</string>
+    <string name="the_price">价&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;格</string>
+    <string name="release">发布</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_release">取消</string>
+    <string name="back">返回</string>
+
+
+    <!-- ===========运单跟踪页=============-->
+    <string name="waybill_tracking">运单跟踪</string>
+
+    <!-- ===========船舶监控页=============-->
+    <string name="ship_monitor">船舶监控</string>
+    <string name="monitor_type">监控类型</string>
+    <string name="start_end_date">起止日期</string>
+
+
+    <!-- ===========登录页=============-->
+    <string name="login">登录</string>
+    <string name="input_accoutn">请输入您的账户</string>
+    <string name="input_password">请输入您的密码</string>
+    <string name="registered"><u>注册账号</u></string>
+    <string name="find_pw"><u>忘记密码</u></string>
+    <string name="find_pw1">忘记密码</string>
+
+    <!-- ===========注册页=============-->
+    <string name="registered_account">注册账号</string>
+    <string name="registered_agreement">注册协议</string>
+
+    <string name="the_registration_agreement"><u>是否同意西江船运网《用户注册协议》</u></string>
+
+    <string name="registered_user_name">用&#160;&#160;户&#160;&#160;名</string>
+    <string name="user_account">账&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号</string>
+    <string name="password">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码</string>
+    <string name="registered_confirm_password">确认密码</string>
+    <string name="user_phone">手&#160;&#160;机&#160;&#160;号</string>
+    <string name="get_verification_code">验证码</string>
+    <string name="verification_code">验&#160;&#160;证&#160;&#160;码</string>
+
+    <string name="registered_company_name">企业名称</string>
+    <string name="business_license">营业执照</string>
+    <string name="business_license_copy_img">营业执照复印件</string>
+    <string name="select_img">选择图片</string>
+    <string name="only_support">只支持gif,bmp,jpg,jpeg,png格式</string>
+
+
+    <string name="user_id">身份证号</string>
+    <string name="creater_user_id">注册人的身份证号</string>
+
+
+    <!-- ===========主页=============-->
+    <string name="china_res_shipping_information">西江船运物流信息平台</string>
+    <string name="the_latest_release">最新发布</string>
+    <string name="the_latest_release_cargo">最新发布货物</string>
+    <string name="the_latest_release_ship">最新发布运力</string>
+
+    <string name="work_bench">工作台</string>
+    <string name="message">消息</string>
+    <string name="add_book">地图</string>
+    <string name="my">我的</string>
+    <string name="copy">复制</string>
+
+
+    <!-- ===========发货页=============-->
+
+    <string name="waybill_location">运单跟踪</string>
+
+    <string name="send_cargo_date">发布货物信息</string>
+    <string name="cargo_date">货物日期</string>
+    <string name="send_Cargo_Add">货物地址</string>
+    <string name="destination">装卸码头</string>
+    <string name="cargo_name">货物品种</string>
+    <string name="cargo_quantity">货物数量</string>
+
+    <string name="tonnage_resq">船舶吨位</string>
+    <string name="ship_type">船舶类型</string>
+    <string name="cargo_price">期望价格</string>
+    <string name="pay_type">支付方式</string>
+    <string name="method_payment">经&#160;&#160;纪&#160;&#160;人</string>
+    <string name="offline_payment">是(是否需要经纪人代发)</string>
+    <string name="online_payment">否</string>
+
+    <string name="payment">支付方式</string>
+    <string name="pay_cif">到岸支付</string>
+    <string name="installment_payment">分期支付</string>
+    <string name="prepay_the_crc">预付给华润</string>
+
+    <string name="pay_before_loading">装货前付款</string>
+    <string name="pay_after_loading">装货后付款</string>
+    <string name="pay_before_discharge">卸货前付款</string>
+    <string name="pay_after_discharge">卸货后付款</string>
+    <string name="pay_after_discharge_by_day">卸货后</string>
+    <string name="by_day">天付款</string>
+    <string name="pay_installment">分期付款(合计100%)</string>
+
+    <string name="before_loading">装货前</string>
+    <string name="after_loading">装货后</string>
+    <string name="before_discharge">卸货前</string>
+    <string name="after_discharge">卸货后</string>
+    <string name="the_percentage">%</string>
+
+
+    <string name="whether_the_tax">是否含税</string>
+    <string name="eleven_tax">货物运输业增值税专用发票(11%)  </string>
+    <string name="six_tax"> 货物运输业增值税专用发票( 6% )  </string>
+
+    <string name="whether_fees_at_the_loading_port">是否含装货港费用</string>
+    <string name="if_the_port_of_discharge_fee">是否含卸货港费用</string>
+    <string name="whether_port_construction_fee">是否含港口建设费</string>
+    <string name="whether_to_pay_demurrage">是否支付滞期费</string>
+
+    <string name="both_ends_with_super">装卸两港合并超</string>
+    <string name="the_loading_time_super">装货时间超</string>
+    <string name="the_unloading_time_super">卸货时间超</string>
+
+
+    <string name="day_from">天,从</string>
+    <string name="start_by_day">天开始按照</string>
+    <string name="shipment_quantity">装船数量</string>
+    <string name="discharging_quantity">卸船数量</string>
+    <string name="to_give">给予</string>
+    <string name="days_demurrage_subsidies">*天滞期补助</string>
+
+
+    <string name="direct_pay_the_ship">直付船方运费</string>
+    <string name="whether_in_advance">(佣金是否预付)</string>
+    <string name="prepay_the_agent">预付给经纪人</string>
+    <string name="one_time_imprest">一次性预付</string>
+    <string name="layaway">分期预付(合计100%)</string>
+
+
+    <string name="isReceipt">是否开票</string>
+    <string name="no">否</string>
+    <string name="yes">是</string>
+
+
+    <string name="note">备注信息</string>
+
+    <!-- ===========发布航行计划页=============-->
+    <string name="send_oyage_plan">发布运力信息</string>
+    <string name="oyage_plan_date">需求有效期</string>
+    <string name="routes">航&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;线</string>
+    <string name="tonnage">船舶吨位</string>
+    <string name="ship_company_name">船务公司</string>
+    <string name="ship_name">船舶名称</string>
+
+    <string name="select_ship">选择船舶</string>
+    <!-- ===========船舶管理信息页页=============-->
+    <string name="shipCode">船舶编号</string>
+    <string name="shipName">船舶名称</string>
+    <string name="captainName">船长姓名</string>
+    <string name="captainTel">船长电话</string>
+    <string name="signing_date">签订日期</string>
+
+    <!-- ===========我的页面=============-->
+    <string name="user_info">用户信息</string>
+    <string name="user_type">用户类型</string>
+
+    <string name="com_info">企业信息</string>
+    <string name="change_password">修改密码</string>
+    <string name="version_code">版&#160;&#160;本&#160;&#160;号</string>
+
+    <string name="exit">退出登录</string>
+    <!-- ===========找回密码=============-->
+    <string name="login_account">登录账号</string>
+
+    <!-- ===========运力查询页面=============-->
+    <string name="search_ship">运力查询</string>
+    <!-- ===========运力详情页面=============-->
+    <string name="ship_info">运力详情</string>
+    <string name="quote">报价</string>
+
+    <!-- ===========运力管理页面=============-->
+    <string name="manage_ship">运力管理</string>
+    <!-- ===========我的订单页面=============-->
+    <string name="my_order">我的运单</string>
+    <string name="have_evaluation">已评价</string>
+
+    <!-- ===========我的运单页面=============-->
+    <string name="my_waybill">我的运单</string>
+    <!-- ===========货物管理页面=============-->
+    <string name="manage_cargo">货物管理</string>
+    <!-- ===========货物详情页面=============-->
+    <string name="cargo_info">货源详情</string>
+    <!-- ===========货源查询页面=============-->
+    <string name="search_cargo">货源查询</string>
+    <!-- ===========货主评价页面=============-->
+    <string name="cargo_eval">货主对船主</string>
+
+    <string name="respscoreO2C">响应速度</string>
+    <string name="priceO2C">货物安全</string>
+    <string name="speedO2C">运输速度</string>
+    <string name="attitudeO2C">服务态度</string>
+    <string name="commentO2C">评&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;语</string>
+    <!-- ===========船主评价页面=============-->
+    <string name="ship_eval">船主对货主</string>
+
+    <string name="payC2O">支付时效</string>
+    <string name="attitudeC2O">合作态度</string>
+
+    <string name="unloadingC2O">装卸效率</string>
+    <string name="berthingC2O">靠泊能力</string>
+    <string name="priceO2C1">运输价格</string>
+
+    <!-- ===========字母排序页面=============-->
+    <string name="town_list">城镇列表</string>
+    <!-- ===========修改密码页面=============-->
+    <string name="old_password">旧&#160;&#160;密&#160;&#160;码</string>
+    <string name="new_password">新&#160;&#160;密&#160;&#160;码</string>
+    <string name="confirm_password">确认密码</string>
+    <!-- ===========关于页面=============-->
+    <string name="about">关&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;于</string>
+    <string name="Dongguan_China_resources_cement_company">东莞华润水泥厂公司</string>
+    <string name="scan">扫&#160;&#160;一&#160;&#160;扫</string>
+
+    <string name="company_name">公司名称</string>
+    <string name="huarun_company_name">西江船运网旨在为西江-珠江沿岸货主、船主、船运物流公司及相关需求方提供物流信息、货源信息、船舶定位跟踪等服务，包含货物运输、仓储、中转、过驳等物流环节，主要解决水上物流信息不对称、船舶货物运输方位不清和运输到货不及时等系列问题，通过可视化全程物流跟踪、提高配载效率、降低物流运输成本，为西江沿岸企业提供高效的物流解决方案。 </string>
+    <string name="contact_phone">手机专线</string>
+    <string name="phone">138 1881 888</string>
+    <string name="contact_tel">联系电话</string>
+    <string name="tel">0769-88688101</string>
+    <string name="contact_email">电子邮箱</string>
+    <string name="email">baidingsuo@163.com</string>
+    <string name="company_address">公司地址</string>
+    <string name="address">广东省东莞市沙田镇福禄沙管理区</string>
+
+
+    <!-- ===========用户信息面=============-->
+    <string name="userName">用户名称</string>
+    <string name="userAccount">用户账号</string>
+    <string name="user_role">账户类型</string>
+    <string name="company">企业名称</string>
+    <string name="companyCode">企业编码</string>
+
+
+    <!-- ===========合同页面=============-->
+    <string name="letter">意向书</string>
+    <string name="signed_letter">签订意向书</string>
+    <string name="look_letter">查看意向书</string>
+
+    <string name="leave_msg">留言</string>
+    <string name="agreed_letter">签订意向书</string>
+    <string name="sign_cancel">取消签约</string>
+
+    <string name="creat_waybill">生成运单</string>
+    <string name="entry_waybill">运单录入</string>
+    <string name="letter_num">意向书编码</string>
+    <string name="loading_capacity">预计装载吨位(吨)</string>
+
+    <string name="price">运输单价(元)</string>
+    <string name="quantity">数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量</string>
+    <string name="total">总&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;价</string>
+    <string name="otherFee">其他费用</string>
+    <string name="freight">运\n价\n包\n含\n项</string>
+
+    <string name="state">待&#160;&#160;签&#160;&#160;约</string>
+    <string name="contractContent">意向书内容</string>
+    <string name="consignorStatement">货主留言</string>
+    <string name="shipStatement">船家留言</string>
+    <string name="consignorState">货主企业</string>
+    <string name="shipcompanyState">船主企业</string>
+    <string name="agentState">中介状态</string>
+    <string name="letterState">状&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;态</string>
+    <!-- ===========运单内容页面=============-->
+
+
+
+
+
+    <string name="transportNum">趟&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;次</string>
+    <string name="remark">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注</string>
+    <string name="waybill_state">运单状态</string>
+    <!-- ===========运单详情页面=============-->
+    <string name="waybill_info">运单详情</string>
+    <string name="go_to_the_loading">到达装货</string>
+    <string name="start_the_loading">开始装货</string>
+
+    <string name="complete_the_set">装船完毕</string>
+    <string name="at_discharge">到达卸货</string>
+    <string name="statement">卸货完毕</string>
+    <string name="over">结单</string>
+
+    <string name="evaluation">评价</string>
+
+    <string name="is_statement">已完成</string>
+    <string name="on_passage">在途中</string>
+    <string name="to_receive">待接受</string>
+    <string name="all">全部</string>
+    <string name="receive">接受</string>
+    <string name="refuse">拒绝</string>
+
+
+
+    <!-- ===========刷新控件=============-->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+</resources>

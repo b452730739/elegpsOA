@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cargoNameLayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/cargo_name"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sp_cargo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/send_Cargo_Add"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_fromTown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:hint="起点城镇"
+                    android:textColorHint="@color/color_hint" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="---"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_endTown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:hint="终点城镇"
+                    android:textColorHint="@color/color_hint" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/oyage_plan_date"
+                    android:theme="@style/BaseTextView" />
+
+                <com.lcd.shipping.dh.view.DateEditText
+                    android:id="@+id/et_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@null"
+
+                    android:gravity="center_horizontal"
+                    android:hint="开始时间"
+                    android:textColorHint="@color/color_hint" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="---"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+
+                <com.lcd.shipping.dh.view.DateEditText
+                    android:id="@+id/et_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@null"
+
+                    android:gravity="center_horizontal"
+                    android:hint="结束时间"
+                    android:textColorHint="@color/color_hint" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/terminalLayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/destination"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_loadingWharf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+
+                    android:hint="装货码头"
+                    android:textColorHint="@color/color_hint" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="---"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_unloadingWharf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:hint="卸货码头"
+                    android:textColorHint="@color/color_hint" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cargoQuantityLayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/cargo_quantity"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/sp_cargo_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:hint="点击输入货物数量"
+                    android:textColorHint="@color/color_hint"
+                    android:background="@null"
+                    android:inputType="number" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/tons"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tonnage_resqLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/tonnage_resq"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_tonnage_resq"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:hint="点击输入船舶吨位"
+                    android:textColorHint="@color/color_hint"
+                    android:background="@null"
+                    android:inputType="number" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/tons"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shipTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/ship_type"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/as_ship_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cargo_priceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/cargo_price"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_cargo_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:hint="点击输入期望价格"
+                    android:textColorHint="@color/color_hint"
+                    android:background="@null"
+                    android:inputType="number" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/money_tons"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/deep_red"
+                    android:theme="@style/BaseTextView" />
+            </LinearLayout>
+
+            <com.lcd.shipping.dh.module.send_cargo.view.PayLayout
+                android:id="@+id/payLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10" />
+
+            <LinearLayout
+                android:id="@+id/mediationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/method_payment"
+                    android:theme="@style/BaseTextView" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/onLinePay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/online_payment"
+                        android:theme="@style/BaseTextView" />
+
+                    <RadioButton
+                        android:id="@+id/offLinePay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offline_payment"
+                        android:theme="@style/BaseTextView" />
+
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/iv_method_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/rc_ext_realtime_default_avatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/payTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/payment"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_pay_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:theme="@style/BaseTextView"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/selectLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.lcd.shipping.dh.module.send_cargo.view.OffLinePayLayout
+                        android:id="@+id/offLinePayLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.lcd.shipping.dh.module.send_cargo.view.OnLinePayLayout
+                        android:id="@+id/onLinePayLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/is_ticket"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/isReceipt"
+                    android:theme="@style/BaseTextView" />
+
+                <RadioGroup
+                    android:id="@+id/isReceipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/no1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/no"
+                        android:theme="@style/BaseTextView" />
+
+                    <RadioButton
+                        android:id="@+id/yes1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:theme="@style/BaseTextView" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/noteLayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/note"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:hint="点击输入备注信息"
+                    android:textColorHint="@color/color_hint"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

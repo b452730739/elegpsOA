@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sdf="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/search_ship"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_20" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="@dimen/space_10"
+            android:paddingTop="@dimen/space_10"
+            android:visibility="gone"
+
+            app:srcCompat="@android:drawable/ic_menu_search" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:paddingRight="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="@dimen/space_1"
+                android:layout_height="@dimen/space_1"
+                /><requestFocus />
+    <com.lcd.shipping.dh.module.info_ship.ShipInfoLayout
+        android:id="@+id/shipInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_15"
+        android:text="@string/search"
+        android:theme="@style/BaseButton" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <com.lcd.shipping.dh.view.srecyclerview.SRecyclerView
+        android:id="@+id/srecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+
+        sdf:mode="list" />
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>

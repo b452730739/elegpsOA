@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/cargo_eval"
+        android:theme="@style/BaseSize18TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/priceO2C"
+            android:textSize="@dimen/text_size_20"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rb_priceO2C"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_weight="1"
+            android:numStars="5"
+
+            android:rating="5"
+            android:stepSize="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/respscoreO2C"
+            android:textSize="@dimen/text_size_20"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rb_respscoreO2C"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_weight="1"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/speedO2C"
+            android:textSize="@dimen/text_size_20"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rb_speedO2C"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_weight="1"
+            android:numStars="5"
+
+            android:rating="5"
+            android:stepSize="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/attitudeO2C"
+            android:textSize="@dimen/text_size_20"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rb_attitudeO2C"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_weight="1"
+            android:numStars="5"
+
+            android:rating="5"
+            android:stepSize="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/commentO2C"
+            android:textSize="@dimen/text_size_20"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_commentO2C"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_weight="1"
+            android:theme="@style/BaseSize18TextView" />
+
+    </LinearLayout>
+</LinearLayout>

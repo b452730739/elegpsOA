@@ -5,6 +5,9 @@
  */
 
 import "./Constants/Constants";
+import {
+    StackNavigator,
+} from 'react-navigation';
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -13,12 +16,17 @@ import {
     TextInput,
   StatusBar,
     Button,
+    Alert,
     Image,
   View
 } from 'react-native';
 
-export default class elegpsOA extends Component {
-  render() {
+
+export default class Login extends Component {
+
+    render() {
+      const { navigate } =
+          this.props.navigation;
     return (
       <View  >
         <StatusBar
@@ -33,13 +41,14 @@ export default class elegpsOA extends Component {
         </View>
 
 
-        <View style={{marginTop:60,marginLeft:60,marginRight:60}}>
+        <View style={{marginTop:50,marginLeft:60,marginRight:60}}>
           <TextInput  placeholder={STRING.inputAccount}/>
         <TextInput secureTextEntry={true} placeholder={STRING.inputPassWord}/>
           <View style={{marginTop:20}}>
 
           <Button
-
+            // onPress={login}
+          onPress={() => {navigate('main')}}
           title={STRING.login}
           color={COLORS.blue}/>
         </View>
@@ -47,15 +56,24 @@ export default class elegpsOA extends Component {
 
       </View>
     );
+
+      function login() {
+
+          navigate('main');
+          // Alert.alert('登录系统');
+      }
+    
   }
 }
 
+const elegpsOA = StackNavigator({
+    login: { screen: Login },
+    main: { screen: Login },
+});
+
+
 const styles = StyleSheet.create({
 
-    // loginButton:{
-    //     color:COLORS.blue,
-    //     title:STRING.login,
-    // },
     loginTitle:{
         width:150,
         height:100

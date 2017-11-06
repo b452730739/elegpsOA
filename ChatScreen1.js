@@ -11,10 +11,8 @@ import {
     View
 } from 'react-native';
 
-class ChatScreen extends React.Component {
-    static navigationOptions = {
-        title: 'Chat with Lucy',
-    };
+class ChatScreen1 extends React.Component {
+
     render() {
         return (
             <View>

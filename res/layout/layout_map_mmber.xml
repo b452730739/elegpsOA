@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="13dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="3dp" >
+    
+    <TextView
+        android:id="@+id/mss_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/pop_gps"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary" />
+     
+    
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"> 
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:src="@drawable/location" />
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>

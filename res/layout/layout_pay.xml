@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_whether_the_tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="@string/isReceipt"
+            android:theme="@style/BaseTextView" />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/rg_whether_the_tax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/no"
+                    android:theme="@style/BaseTextView" />
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:theme="@style/BaseTextView" />
+
+
+
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/rg_tax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_eleven_tax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/eleven_tax"
+                android:theme="@style/BaseTextView" />
+
+            <RadioButton
+                android:id="@+id/rb_six_tax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/six_tax"
+                android:theme="@style/BaseTextView" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_whether_fees_at_the_loading_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/whether_fees_at_the_loading_port"
+            android:theme="@style/BaseTextView" />
+
+        <RadioGroup
+            android:id="@+id/rg_whether_fees_at_the_loading_port"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/no11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/no"
+                android:theme="@style/BaseTextView" />
+
+            <RadioButton
+                android:id="@+id/yes11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:theme="@style/BaseTextView" />
+            <LinearLayout
+                android:id="@+id/price_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_cargo_price1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:minWidth="@dimen/space_20"
+                android:maxWidth="@dimen/space_30"
+                android:textSize="@dimen/text_size_15" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/money_tons"
+                android:theme="@style/BaseTextView" />
+            </LinearLayout>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_if_the_port_of_discharge_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/if_the_port_of_discharge_fee"
+            android:theme="@style/BaseTextView" />
+
+        <RadioGroup
+            android:id="@+id/rg_if_the_port_of_discharge_fee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/no"
+                android:theme="@style/BaseTextView" />
+
+            <RadioButton
+                android:id="@+id/yes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:theme="@style/BaseTextView" />
+            <LinearLayout
+                android:id="@+id/price_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+
+                android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_cargo_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_40"
+
+                android:layout_weight="1"
+                android:inputType="number"
+                android:minWidth="@dimen/space_20"
+                android:maxWidth="@dimen/space_30"
+                android:textSize="@dimen/text_size_15"  />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/money_tons"
+                android:theme="@style/BaseTextView" />
+            </LinearLayout>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_whether_port_construction_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/whether_port_construction_fee"
+            android:theme="@style/BaseTextView" />
+
+        <RadioGroup
+            android:id="@+id/rg_whether_port_construction_fee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/no3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/no"
+                android:theme="@style/BaseTextView" />
+
+            <RadioButton
+                android:id="@+id/yes3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:theme="@style/BaseTextView" />
+            <LinearLayout
+                android:id="@+id/price_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+
+                android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_cargo_price3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_40"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:minWidth="@dimen/space_20"
+                android:maxWidth="@dimen/space_30"
+                android:textSize="@dimen/text_size_15"  />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/money_tons"
+                android:theme="@style/BaseTextView" />
+            </LinearLayout>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_whether_to_pay_demurrage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="@string/whether_to_pay_demurrage"
+                android:theme="@style/BaseTextView" />
+
+            <RadioGroup
+                android:id="@+id/rg_whether_to_pay_demurrage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/no4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/no"
+                    android:theme="@style/BaseTextView" />
+
+                <RadioButton
+                    android:id="@+id/yes4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:theme="@style/BaseTextView" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/DemurragePayLayout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.lcd.shipping.dh.module.send_cargo.view.DemurragePayLayout
+        android:id="@+id/DemurragePayLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.lcd.shipping.dh.module.send_cargo.view.DemurragePayLayout
+        android:id="@+id/DemurragePayLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.lcd.shipping.dh.module.send_cargo.view.DemurragePayLayout
+        android:id="@+id/DemurragePayLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

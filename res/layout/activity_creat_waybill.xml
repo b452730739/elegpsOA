@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/creat_waybill"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_20" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/iv_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/space_10"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_5"
+            android:text="@string/letter"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/BaseTextView"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+<com.lcd.shipping.dh.module.creat_waybill.WaybillInfoLayout
+    android:id="@+id/ll_waybillInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+</com.lcd.shipping.dh.module.creat_waybill.WaybillInfoLayout>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:text="@string/submit"
+        android:theme="@style/BaseButton" />
+
+</LinearLayout>

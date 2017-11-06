@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sdf="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.lcd.shipping.dh.view.srecyclerview.SRecyclerView
+        android:id="@+id/srecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sdf:mode="list" />
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+
+        <variable
+            name="user"
+            type="com.lcd.shipping.dh.entity.User" />
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        tools:context=".dh.module.info_user.UserInfoActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/user_info"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_20" />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:paddingRight="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/userName"
+                            android:drawableLeft="@drawable/icon_user_name"
+                            android:drawablePadding="@dimen/space_10"
+                            android:theme="@style/DarkGray16TextView" />
+
+                        <android.support.v7.widget.AppCompatTextView
+
+                            android:id="@+id/tv_userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:text="@{user.userName}"
+                            android:theme="@style/DarkGray16TextView" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_line" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/userAccount"
+                            android:drawableLeft="@drawable/icon_user_account"
+                            android:drawablePadding="@dimen/space_10"
+                            android:theme="@style/DarkGray16TextView" />
+
+                        <android.support.v7.widget.AppCompatTextView
+
+                            android:id="@+id/tv_userAccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:text="@{user.userAccount}"
+
+                            android:theme="@style/DarkGray16TextView" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_line" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/user_role"
+                            android:drawableLeft="@drawable/icon_user_role"
+                            android:drawablePadding="@dimen/space_10"
+                            android:theme="@style/DarkGray16TextView" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_user_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:text="@{user.role}"
+
+                            android:theme="@style/DarkGray16TextView" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_line" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/company_name_layout"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/company"
+                            android:drawableLeft="@drawable/icon_company_name"
+                            android:drawablePadding="@dimen/space_10"
+                            android:theme="@style/DarkGray16TextView" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:text="@{user.company}"
+
+                            android:theme="@style/DarkGray16TextView" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_line" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/company_code_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/companyCode"
+                            android:drawableLeft="@drawable/icon_company_code"
+                            android:drawablePadding="@dimen/space_10"
+                            android:theme="@style/DarkGray16TextView" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_companyCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:text="@{user.companyCode}"
+                            android:theme="@style/DarkGray16TextView" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_line" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

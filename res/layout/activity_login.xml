@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_bg"
+                android:layout_marginTop="@dimen/space_5"
+                android:hint="@string/input_accoutn"
+                android:paddingLeft="@dimen/space_60"
+                android:theme="@style/BaseEditText" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etPassWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password_bg"
+                android:hint="@string/input_password"
+                android:inputType="textPassword"
+                android:layout_marginTop="@dimen/space_5"
+
+                android:paddingLeft="@dimen/space_60"
+                android:theme="@style/BaseEditText" />
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/asSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@drawable/account_bg"
+                android:paddingRight="@dimen/space_60"
+                android:paddingLeft="@dimen/space_60"
+                android:theme="@style/BaseEditText" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvfindPW"
+                    android:layout_gravity="left"
+                    android:theme="@style/BaseSize18TextView"
+                    android:text="@string/find_pw"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvRegistered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:text="@string/registered"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:theme="@style/BaseSize18TextView" />
+            </RelativeLayout>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:text="@string/login"
+                android:theme="@style/BaseButton" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_60"
+            app:srcCompat="@drawable/login_title_bg" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@drawable/loading_bg"/>
+
+    </RelativeLayout>
+</LinearLayout>

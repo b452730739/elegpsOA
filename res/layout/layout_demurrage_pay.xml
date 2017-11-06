@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_type"
+            style="@style/BaseSize15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/both_ends_with_super" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_day1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_15"
+            android:maxWidth="@dimen/space_30"
+            android:minWidth="@dimen/space_30" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BaseSize15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/day_from" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_day2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_15"
+            android:maxWidth="@dimen/space_30"
+            android:minWidth="@dimen/space_30" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BaseSize15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/start_by_day" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_20"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/shipment_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/shipment_quantity"
+            android:theme="@style/BaseTextView" />
+
+        <RadioButton
+            android:id="@+id/discharging_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discharging_quantity"
+            android:theme="@style/BaseTextView" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginLeft="@dimen/space_25">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BaseSize15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:text="@string/to_give" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_day3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/text_size_15"
+            android:maxWidth="@dimen/space_30"
+            android:minWidth="@dimen/space_30" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BaseSize15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/money_tons" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_day4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone"
+            android:maxWidth="@dimen/space_30"
+            android:minWidth="@dimen/space_30" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BaseSize15TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/days_demurrage_subsidies" />
+    </LinearLayout>
+
+</LinearLayout>

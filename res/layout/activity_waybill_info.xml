@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/waybill_info"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_20" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/iv_eval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/space_10"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_5"
+            android:text="@string/evaluation"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/BaseTextView"
+            android:visibility="gone" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/iv_cancel"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/space_10"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_5"
+            android:text="@string/cancel"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/BaseTextView"
+           />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:paddingRight="@dimen/space_10"
+        android:paddingLeft="@dimen/space_10"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5"
+                android:paddingTop="@dimen/space_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/ship_company_name"
+                    android:theme="@style/BaseTextView" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_shipComName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@null"
+                   />
+
+
+
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/destination"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/et_loadingWharf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="装货码头"
+            android:textColor="@color/black" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="---"
+            android:textColor="@color/deep_red"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/et_unloadingWharf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="卸货码头"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/cargo_date"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/et_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="开始时间"
+            android:textColor="@color/black"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="---"
+            android:textColor="@color/deep_red"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/et_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="结束时间"
+            android:textColor="@color/black"
+            android:theme="@style/BaseTextView" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/waybill_location"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/space_5"
+            android:src="@drawable/location" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/cargoNameLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/cargo_name"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_cargo_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@null" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/cargo_quantity"
+            android:theme="@style/BaseTextView" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_cargo_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tons"
+            android:theme="@style/BaseTextView" />
+
+
+    </LinearLayout>
+
+    <com.lcd.shipping.dh.module.creat_waybill.WaybillInfoLayout
+        android:id="@+id/ll_waybillInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/receive"
+            android:theme="@style/Base16Button"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_refuse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/refuse"
+            android:theme="@style/Base16Button"
+            android:visibility="gone" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:theme="@style/Base16Button"
+            android:visibility="gone"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_loding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/go_to_the_loading"
+            android:theme="@style/Base16Button"
+            android:visibility="gone"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_start_loding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/start_the_loading"
+            android:theme="@style/Base16Button"
+            android:visibility="gone"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/complete_the_set"
+            android:theme="@style/Base16Button"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/at_discharge"
+            android:theme="@style/Base16Button"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_statement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/statement"
+            android:theme="@style/Base16Button"
+            android:visibility="gone"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_over"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/over"
+            android:theme="@style/Base16Button"
+            android:visibility="gone"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/message"
+            android:theme="@style/Base16Button"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>
